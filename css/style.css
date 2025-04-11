@@ -1,0 +1,470 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+:root{
+    --text-color1 :#3b0404;
+    --text-color2: #de847b;
+    --text-color3: rgb(113, 111, 111);
+    --bg-color1: #deb3ad;
+    --bg-color2: #7a2c1d;
+}
+
+.right_section{
+    margin-left: 200px;
+}
+
+/* NAV SECTION */
+
+.nav_container {
+    width: 200px;
+    color: var(--text-color1);
+    /* padding: 20px; */
+    position: fixed;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav_container .profile-pic{
+    margin-top: 3rem;
+}
+  
+  .sidebar .profile-pic img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+  
+  .nav_menu{
+    list-style: none;
+    line-height: 3rem;
+    align-self: center;
+    margin-top: 1.5rem;
+}
+
+.nav_menu li{
+    padding-left: 1rem;
+}
+  
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color1);
+    padding: auto;
+}
+
+i{
+    font-size: 1.7rem;
+    margin-right: 0.8rem;
+}
+
+.nav_container .profile-pic img {
+    width: 10rem;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    border: 0.7rem solid var(--bg-color1);
+}
+
+.nav_container hr{
+    height: 0.5px;
+    background-color: var(--text-color1);
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.nav_menu li:hover{
+    background-color: #eee;
+    border-left: 4px solid var(--text-color1);
+    display: block;
+    font-weight: bold;
+}
+
+.nav_menu li:active{
+    opacity: 0.5;
+    
+}
+
+/* END OF NAV SECTION */
+
+
+/* --------------CONTENT SECTION------------- */
+
+/* FIRST SECTION */
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: typing 3s steps(25, end), blink-caret 0.75s step-end infinite;
+}
+  
+  @keyframes typing {
+    /* from { width: 0 }
+    to { width: 100% } */
+    /* used character instead of width */
+    from { width: 0ch }
+    to { width: 18ch }
+}
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--text-color1); }
+}
+  
+.section_first {
+    padding: 40px;
+    overflow-y: auto;
+    height: 100vh;
+    background-color: var(--bg-color1);
+    color: var(--text-color1);
+    font-size: 2rem;
+    padding-left: 8rem;
+    padding-top: 7rem;
+    background-image: url(../images/bg-image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_first p{
+    margin: 1rem 0 0;
+}
+
+.social button{
+    border-radius: 50%;
+    padding: 0.8rem;
+    border: 0.5px solid #b6b6b6;
+    margin-top: 2rem;
+}
+
+.social i{
+    margin: 0 auto;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-btn{
+    color:  #0077b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 400ms ease;
+}
+
+.linkedin-btn:hover{
+    color: white;
+    background-color:  #0077b5;
+}
+
+.github-btn{
+    transition: all 400ms ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.github-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+.first_btn button{
+    padding: 1rem;
+    margin-top: 2rem;
+    border: transparent;
+    background-color: var(--text-color1);
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+.first_btn .btnn{
+    background-color: white;
+    padding: 1rem 2.5rem;
+    color: var(--text-color1);
+    border: 1px solid var(--text-color1);
+    opacity: 0.7;
+    transition: all 400ms ease;
+}
+
+.first_btn .btnn:hover{
+    opacity: 0.5;
+}
+
+/* SECOND SECTION */
+.header_title{
+    color: white;
+    background: var(--text-color1);
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.section_second p{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.section_second{
+    /* margin-bottom: 4rem; */
+    
+}
+
+/* THIRD SECTION */
+.skill{
+    width: 600px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.skill_title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar{
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.fill_html{
+    width: 92%;
+    height: 20px;
+    background-color: #6a0dad;
+    border-radius: 10px;
+}
+
+.fill_css{
+    width: 88%;
+    height: 20px;
+    background-color: #f0db4f;
+    border-radius: 10px;
+}
+
+.fill_js{
+    width: 72%;
+    height: 20px;
+    background-color: #61dafb;
+    border-radius: 10px;
+}
+
+.fill_bs{
+    width: 80%;
+    height: 20px;
+    background-color: rgb(208, 36, 122);
+    border-radius: 10px;
+}
+
+.skill_total{
+    padding-bottom: 4rem;
+}
+
+
+
+/* FORTH SECTION */
+.sec_info {
+    width: 75%;
+    color: var(--text-color1);
+    padding: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    line-height: 3.5rem;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.sec_info h4{
+    font-size: 2rem;
+}
+
+.sec_info p{
+    font-size: 1.5rem;
+}
+
+.location{
+    color: var(--text-color2);
+}
+
+
+/* FIFTH SECTION */
+.exp_list{
+    font-size: 1.15rem;
+    text-align: left;
+}
+
+
+/* SIXTH SECTION */
+.project_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 3.5rem;
+    text-align: center;
+}
+
+.project img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.project{
+    background-color: #eeeeeea0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    color: var(--text-color1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.project:hover{
+    box-shadow: 0 3rem 3rem rgba(54, 54, 54, 0.3);
+}
+
+.project_info{
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+
+hr{
+    margin: 1.5rem 0;
+}
+
+.title_res{
+    color: var(--text-color2);
+}
+
+.project_info p{
+    margin-top: 1rem;
+    color: var(--text-color3);
+}
+
+/* Dark overlay (hidden by default) */
+.project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Show the dark overlay when hovering over the project */
+.project:hover::before {
+    opacity: 0.6; /* Show the overlay on hover */
+}
+
+/* Sidebar styling */
+.project_sidebar {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Moved to the right */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2; /* Make sure the sidebar appears above the overlay */
+}
+
+.project:hover .project_sidebar {
+    opacity: 1; /* Show the sidebar on hover */
+}
+
+/* Link styles */
+.project_sidebar a {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project_sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal (Hidden by default) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+    padding: 60px;
+}
+
+/* Modal Image */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* SEVENTH SECTION */
+.section_seventh li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.section_seventh a:hover{
+    text-decoration: underline;
+}
+
+.section_seventh{
+    padding-bottom: 1rem;
+}
+/* END OF CONTENT SECTION */  
