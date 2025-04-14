@@ -56,11 +56,15 @@
     margin-top: 1.5rem;
 }
 
+nav button{
+    display: none;
+}
+
 .nav_menu li{
     padding-left: 1rem;
 }
-  
-  a{
+
+a{
     text-decoration: none;
     cursor: pointer;
     color: var(--text-color1);
@@ -100,6 +104,19 @@ i{
     opacity: 0.5;
     
 }
+
+.fade-slide {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 1s ease;
+  }
+  
+  .fade-slide.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
 
 /* END OF NAV SECTION */
 
@@ -468,3 +485,48 @@ hr{
     padding-bottom: 1rem;
 }
 /* END OF CONTENT SECTION */  
+
+
+
+/* MEDIA QUERY FOR TABLET */
+@media screen and (max-width: 1024px) {
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: black;
+        cursor: pointer;
+    }
+    
+      nav button.close_menu_btn{
+        display: none;
+    
+    }
+
+      .nav_content{
+        position: fixed;
+        top: 4rem;
+        left: 1%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        /* background: var(--bg-color1); */
+        background-color: white;
+        transition: var(--transition);
+        z-index: 1000;
+        width: 170px;
+    }
+
+    .right_section{
+        margin-left: 0;
+        box-shadow: 0;
+    }
+    
+    nav button{
+    
+    }
+}
+
+/* MEDIA QUERY FOR PHONE */
