@@ -30,8 +30,6 @@ function closeModal(event) {
 
 
 
-
-
 //ANIMATION
 const animatedSections = document.querySelectorAll('.fade-slide');
 
