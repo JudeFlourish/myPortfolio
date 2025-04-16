@@ -47,13 +47,13 @@
             <p class="typewriter">A Front End Developer</p>
 
             <div class="social">
-                <a href="https://www.linkedin.com/in/flourish-jude-568a77353"><button class="linkedin-btn"><i class="uil uil-linkedin"></i></button></a>
-                <a href="https://github.com/JudeFlourish"><button class="github-btn"><i class="uil uil-github"></i></button></a>
+                <a href="https://www.linkedin.com/in/flourish-jude-568a77353" target="_blank"><button class="linkedin-btn"><i class="uil uil-linkedin"></i></button></a>
+                <a href="https://github.com/JudeFlourish" target="_blank"><button class="github-btn"><i class="uil uil-github"></i></button></a>
             </div>
             
             <div class="first_btn">
                 <a href="#about"><button class="btnn">Read More</button></a>
-                <a href="./Resume/Jude Flourish. resume.pdf"><button class="btn">Download Resume</button></a>
+                <a href="./Resume/Jude Flourish. resume.pdf" target="_blank"><button class="btn">Download Resume</button></a>
             </div>
         </section>
 
@@ -202,13 +202,15 @@
                 </div>
 
             </div>
-
-            <!-- Modal for displaying larger image -->
-               <div id="modal" class="modal" onclick="closeModal(event)">
-                  <span id="close" class="close">&times;</span>
-                  <img id="modal_img" class="modal-content" alt="Project Image">
-               </div>
+  
         </section>
+
+        <!-- Modal for displaying larger image -->
+              <div id="imageModal" class="modal" onclick="closeModal(event)">
+                   <span class="close" onclick="closeModal(event)">&times;</span>
+                   <img id="modalImage" class="modal-content" alt="Project Image">
+              </div>
+              
 
         <section class="section_seventh fade-slide" id="contact">
             <h2 class="header_title">Contact</h2>
@@ -216,9 +218,9 @@
             <div class="sec_info">
                 <ul class="exp_list">
                     <li><i class="uil uil-phone"></i>+234 807 353 5439</li>
-                    <li><a href="mailto:judeflourish01@gmail.com"><i class="uil uil-envelope"></i>judeflourish01@gmail.com</a></li>
-                    <li><a href="https://github.com/JudeFlourish"><i class="uil uil-github"></i>github.com/JudeFlourish</a></li>
-                    <li><a href="https://www.linkedin.com/in/flourish-jude-568a77353"><i class="uil uil-linkedin"></i>linkedin.com/in/flourish-jude</a></li>
+                    <li><a href="mailto:judeflourish01@gmail.com" target="_blank"><i class="uil uil-envelope"></i>judeflourish01@gmail.com</a></li>
+                    <li><a href="https://github.com/JudeFlourish" target="_blank"><i class="uil uil-github"></i>github.com/JudeFlourish</a></li>
+                    <li><a href="https://www.linkedin.com/in/flourish-jude-568a77353" target="_blank"><i class="uil uil-linkedin"></i>linkedin.com/in/flourish-jude</a></li>
                 </ul>
             </div>
 
@@ -226,6 +228,9 @@
         </div>
         
      </div>
+
+   
+      
 </body>
 
 <script src="./javascript/main.js"></script>

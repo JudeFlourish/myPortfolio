@@ -269,10 +269,11 @@ i{
 
 /* THIRD SECTION */
 .skill{
-    width: 50%;
+    width: 60%;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
+
 .skill_title{
     display: flex;
     justify-content: space-between;
@@ -328,7 +329,7 @@ i{
     align-items: center;
     margin: 0 auto;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -342,6 +343,9 @@ i{
 
 .location{
     color: var(--text-color2);
+}
+.section_forth{
+    padding-bottom: 1rem;
 }
 
 
@@ -450,20 +454,6 @@ hr{
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Modal (Hidden by default) */
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.9);
-    padding: 60px;
-}
 
 /* Modal Image */
 .modal-content {
@@ -471,6 +461,38 @@ hr{
     display: block;
     width: 80%;
     max-width: 700px;
+}
+
+/* Modal (Hidden by default) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+  .modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+}
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Close Button */
@@ -518,6 +540,7 @@ hr{
         color: var(--text-color1);
         cursor: pointer;
         border: none;
+        margin-left: 1rem;
     }
     
     nav button.close_menu_btn{
@@ -543,16 +566,15 @@ hr{
 
     .nav_content{
         position: fixed;
-        top: 5rem;
-        left: 3%;
-        width: 20rem;
+        top: 3.9rem;
+        left: 0;
         flex-direction: column;
         gap: 0;
         display: none;
         background-color: white;
-        transition: var(--transition);
         z-index: 1000;
-        width: 200px;
+        width: 100%;
+        height: 100vh;
     }
 
     .nav_container {
@@ -562,7 +584,6 @@ hr{
         position: fixed; 
         width: 0;
         color: var(--text-color1);
-        box-shadow: none;
     }
     
     nav {
@@ -578,6 +599,9 @@ hr{
 
     .nav-center {
         display: block;
+        cursor: pointer;
+        text-align: center;
+        
     }
       
     .right_section{
@@ -587,14 +611,26 @@ hr{
     
     nav button{
         display: block;
-        right: 1%;
     }
 
     .nav_menu li{
-        padding-left: 1rem;
-        width: 200px;
+        padding-left: 2rem;
     }
 
+    /* SIXTH SECTION */
+    .project img{
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    .project_content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 2rem;
+        text-align: center;
+     }
    
 }
 
@@ -656,7 +692,7 @@ hr{
         width: 90%;
         padding: 2rem;
         line-height: 2.3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1.7rem;
     }
 
     .sec_info h4{
@@ -668,17 +704,9 @@ hr{
     }
 
     /* SIXTH SECTION */
-    .project_content{
-       display: grid;
-       grid-template-columns: 1fr;
-       gap: 2rem;
-       margin: 3rem 3.5rem;
-       text-align: center;
-    }
-    
     .project img{
         width: 100%;
-        height: 17rem;
+        height: 18rem;
         object-fit: cover;
     }
 
@@ -686,6 +714,7 @@ hr{
         padding: 1rem;
         line-height: 1.5rem;
     }
+    
 
 
 }

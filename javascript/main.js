@@ -1,22 +1,35 @@
-// Function to open the modal and display the clicked image
-function openModal(linkElement) {
-    var modal = document.getElementById("modal");
-    var modalImg = document.getElementById("modal_img");
-    
-    // Set the modal image source to the source of the project image associated with the "View" link
-    var projectImage = linkElement.closest(".project").querySelector("img").src;
-    modal.style.display = "block";
-    modalImg.src = projectImage;
+// Function to open modal from "View" button
+function openModal(linkElement, event) {
+  event.preventDefault();
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const projectImage = linkElement.closest(".project").querySelector("img").src;
+
+  // Log to check if the modal is triggered
+  console.log('Opening modal with image:', projectImage);
+
+  // Show the modal
+  modal.style.display = "block";
+  modalImg.src = projectImage;
+
+  // Disable body scroll
+  document.body.style.overflow = "hidden";
 }
 
-// Function to close the modal without scrolling the page to the top
+// Function to close modal when clicking on background or close button
 function closeModal(event) {
-    var modal = document.getElementById("modal");
+  const modal = document.getElementById("imageModal");
+  if (event.target.classList.contains("modal") || event.target.classList.contains("close")) {
+    // Hide the modal
     modal.style.display = "none";
 
-    // Prevent the default behavior of the click (which scrolls to the top)
-    event.preventDefault();
+    // Re-enable body scroll
+    document.body.style.overflow = "auto";
+  }
 }
+
+
+
 
 
 //ANIMATION
@@ -38,26 +51,32 @@ animatedSections.forEach(section => observer.observe(section));
 
 
 
+//NAV SECTION
+const navContent = document.querySelector('.nav_content');
+  const closeBtn = document.querySelector('.close_menu_btn');
+  const openBtn = document.querySelector('.open_menu_btn');
+  const navLinks = document.querySelectorAll('.nav_menu li a');
 
+  // Show nav
+  openBtn.addEventListener('click', () => {
+    navContent.style.display = 'block';
+    closeBtn.style.display = 'inline-block';
+    openBtn.style.display = 'none';
+  });
 
+  // Hide nav
+  closeBtn.addEventListener('click', () => {
+    navContent.style.display = 'none';
+    openBtn.style.display = 'inline-block';
+    closeBtn.style.display = 'none';
+  });
 
-//show/hide nav menu
-const menu = document.querySelector(".nav_content");
-const menuBtn = document.querySelector(".open_menu_btn");
-const closeBtn = document.querySelector(".close_menu_btn");
-
-menuBtn.addEventListener('click', () => {
-    menu.style.display = "flex";
-    closeBtn.style.display = "inline-block";
-    menuBtn.style.display = "none";
-})
-
-//close nav menu
-const closeNav = () => {
-    menu.style.display = "none";
-    closeBtn.style.display = "none";
-    menuBtn.style.display = "inline-block";
-}
-
-closeBtn.addEventListener('click', closeNav)
+  // Hide nav when any menu link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navContent.style.display = 'none';
+      openBtn.style.display = 'inline-block';
+      closeBtn.style.display = 'none';
+    });
+  });
 
