@@ -535,7 +535,7 @@ hr{
         color: var(--text-color1);
         cursor: pointer;
         border: none;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }
     
     nav button.close_menu_btn{
@@ -606,6 +606,13 @@ hr{
     nav button{
         display: block;
     }
+    .open_menu_btn i{
+        font-size: 2.2rem;
+    }
+
+    .close_menu_btn i{
+        font-size: 2.2rem;
+    }
 
     .nav_menu li{
         padding-left: 2rem;
@@ -632,7 +639,7 @@ hr{
 @media screen and (max-width: 600px) {
     /* FIRST SECTION */ 
     .section_first {
-        padding-left: 3rem;
+        padding-left: 2rem;
     }
     
     /* SECOND SECTION */ 
@@ -680,7 +687,7 @@ hr{
     .fill_njs{
         width: 80%;
         height: 10px;
-        background-color: rgb(53, 208, 36);
+        background-color: rgb(208, 36, 122);
         border-radius: 5px;
     }
     
