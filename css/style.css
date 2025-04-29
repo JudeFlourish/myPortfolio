@@ -29,6 +29,10 @@
 
 /* NAV SECTION */
 
+nav {
+    position: relative;
+}
+
 .nav_container {
     width: 200px;
     color: var(--text-color1);
@@ -108,10 +112,12 @@ i{
 .nav-center {
     display: none;
     position: absolute;
-    left: 40%;
-    transform: translateY(-90%);
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
     text-align: center;
     color: var(--text-color1);
+    z-index: 10;
   }
   
   .nav-center h1 {
@@ -124,7 +130,6 @@ i{
     margin: 0;
     font-size: 14px;
   }
-  
 
 .fade-slide {
     opacity: 0;
@@ -591,7 +596,6 @@ hr{
         display: block;
         cursor: pointer;
         text-align: center;
-        
     }
       
     .right_section{
@@ -670,6 +674,13 @@ hr{
         width: 80%;
         height: 10px;
         background-color: rgb(208, 36, 122);
+        border-radius: 5px;
+    }
+
+    .fill_njs{
+        width: 80%;
+        height: 10px;
+        background-color: rgb(53, 208, 36);
         border-radius: 5px;
     }
     
